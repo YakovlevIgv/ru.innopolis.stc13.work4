@@ -35,6 +35,12 @@ import java.util.Random;
 public class GeneratorWords {
 
     public GeneratorWords() {
+        String puth_2_file="C://Users//IIV//Documents//Temp";//Путь к файлу
+        String[] words_set ={
+                "word1","word2"
+        };
+        getFiles(puth_2_file, 6, 5, words_set, 4);
+
     }
 
     /**
@@ -198,7 +204,7 @@ public class GeneratorWords {
 
 
 
-    public static void writeFile(String fileName,
+    /*public static void writeFile(String fileName,
                                  String content) {
         try (FileOutputStream fileOutputStream =
                      new FileOutputStream(fileName)) {
@@ -210,5 +216,5 @@ public class GeneratorWords {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }/**/
 }
